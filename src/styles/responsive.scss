@@ -1,0 +1,285 @@
+@media screen and (min-width: 400px) {
+	header {
+		padding: 10px 30px;
+	}
+
+	.hero__description {
+		h1 {
+			font-size: 1.5em;
+		}
+		p {
+			font-size: 1.2em;
+		}
+	}
+
+	.nav__item {
+		padding: 10px 30px;
+	}
+
+	.content {
+		h2 {
+			margin-bottom: 40px;
+		}
+	}
+
+	.preloader {
+		background-size: 70%;
+	}
+
+	.restaurant__content {
+		padding: 25px;
+	}
+
+	restaurant-item {
+		img {
+			min-height: 300px;
+		}
+	}
+}
+
+@media screen and (min-width: 568px) {
+	.preloader {
+		background-size: 60%;
+	}
+
+	.hero__description {
+		button.btn_explore_now {
+			width: 14rem;
+			font-size: 1.2rem;
+			.button-text {
+				line-height: 1.6rem;
+			}
+		}
+	}
+
+	.restaurant__content {
+		padding: 30px;
+	}
+
+	restaurant-item {
+		img {
+			min-height: 350px;
+		}
+	}
+}
+
+@media screen and (min-width: 715px) {
+	#hamburger {
+		display: none;
+	}
+
+	#drawer {
+		width: auto;
+		position: static;
+	}
+
+	.nav__item {
+		width: auto;
+		padding: 0 15px;
+		display: inline-block;
+	}
+
+	restaurant-detail {
+		.restaurant__menus {
+			.menu__list {
+				position: relative;
+				flex-direction: row;
+				.foods, .drinks {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+				}
+				
+				.foods {
+					border-radius: 0 60px;
+				}
+				
+				.drinks {
+					border-radius: 60px 0;
+				}
+			}
+
+		}
+
+		.restaurant__picture {
+			.favorite, .favorited {
+				font-size: 1.5em;
+				padding: 10px 15px 10px 17px;
+			}
+		}
+	}
+
+	restaurant-item {
+		img {
+			min-height: 380px;
+		}
+	}
+}
+
+@media screen and (min-width: 800px) {
+	restaurant-item {
+		img {
+			min-height: 400px;
+		}
+	}
+
+	restaurant-detail {
+		.preloader {
+			height: 600px;
+		}
+
+		.restaurant__info, .restaurant__menus {
+			padding: 40px;
+		}
+
+		.load_more_review {
+			padding: 10 40px;
+		}
+
+		.customer__reviews_list {
+			.customer__review {
+				padding: 15px 40px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 996px) {
+	body {
+		background: url('../public/images/background.webp');
+		background-attachment: fixed;
+	}
+
+	header {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	div#hero {
+		border: none;
+	}
+
+	.hero__description {
+		h1 {
+			font-size: 2em;
+		}
+		p {
+			font-size: 1.5em;
+		}
+	}
+
+	#logo {
+		h1 {
+			font-size: 2em;
+		}
+	}
+
+	div#mainContent {
+		min-height: 300px;
+		box-shadow: 0 8px 10px #2222225e;
+		margin-bottom: 0;
+		background-color: $background-color_5;
+		h2 {
+			margin-bottom: 55px;
+			font-size: 24px;
+		}
+	}
+
+	.content {
+		min-height: 600px;
+	}
+
+
+	.preloader {
+		background-size: 100%;
+	}
+
+	footer {
+		position: relative;
+	}
+
+	restaurant-detail {
+		.restaurant__info, .restaurant__menus {
+			padding: 60px;
+		}
+	}
+
+	restaurant-list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 300px);
+		gap: 16px;
+		justify-content: center;
+	}
+
+	restaurant-item {
+		border-radius: 15px;
+		width: 300px;
+		height: 400px;
+		transition: all .7s;
+		img {
+			height: 200px;
+			min-height: 200px;
+			border-radius: 0 0 0 20%;
+			border: none;
+		}
+		&:hover {
+			box-shadow: 0 3px 10px 5px #3335,
+						0 0 0 3px #8062431c;
+			top: -14px;
+			img {
+				border: none;
+				border-radius: 0;
+				top: -80px;
+			}
+			.restaurant__content {
+				top: -80px;
+				height: 250px;
+			}
+		}
+	}
+
+	.restaurant__content {
+		padding: 20px;
+		height: 175px;
+		text-overflow: ellipsis;
+		overflow: auto;
+	}
+
+	footer {
+		font-size: 0.8em;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	header {
+		margin: auto;
+		max-width: 1000px;
+	}
+
+	div#hero {
+		margin: 0 auto;
+		max-width: 1000px;
+		text-align: center;
+		box-shadow: 0 -8px 10px #2222225e;
+		img, source {
+			max-width: 1000px;
+		}
+	}
+
+	.content {
+		border-radius: 0;
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 40px 0;
+	}
+
+	main {
+		margin: 0 auto;
+	}
+
+	footer {
+		margin: auto;
+		max-width: 1000px;
+		box-shadow: 0 8px 10px #2222225e;
+	}
+}
